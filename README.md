@@ -40,13 +40,15 @@ output: "export"
 
 1. 将代码推送到 GitHub / GitLab / CodeCommit。
 2. 在 AWS Amplify Hosting 创建应用并连接仓库。
-3. Build command 填写：
+3. 选择仓库 `yobotyao-maker/huanxi` 与分支 `main`。
+4. 项目根目录已包含 `amplify.yml`，Amplify 会自动使用 Node 22、执行 `npm ci && npm run build`，并发布 `out/` 目录。
+5. 如果控制台要求手动填写，Build command 填写：
 
 ```bash
 npm ci && npm run build
 ```
 
-4. Output directory 填写：
+6. Output directory 填写：
 
 ```text
 out
